@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthwise Saving Tracker</title>
+    <link rel="stylesheet" href="balance.css">
+</head>
+<body>
+    <header>
+        <h1>Monthwise Saving Tracker</h1>
+    </header>
+
+    <main>
+        <section class="add-savings">
+            <h2>Add Monthly Savings</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="enter your name">
+            <br>
+            <label for="month">Month:</label>
+            <input type="text" id="month" placeholder="E.g., January 2023">
+            <br>
+            <label for="amount">Amount Saved (USD):</label>
+            <input type="number" id="amount" placeholder="Enter the amount">
+            <button onclick="addSavings()">Add</button>
+        </section>
+
+        <section class="savings-history">
+            <h2>Savings History</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+
+                    <th>Month</th>
+                    <th>Amount Saved (USD)</th>
+                </tr>
+                <!-- Savings records will be dynamically added here -->
+            </table>
+        </section>
+    </main>
+
+    <script src="balance.js"></script>
+</body>
+</html>
